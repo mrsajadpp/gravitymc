@@ -91,7 +91,7 @@ sleep 3 # wait for ngrok to start
 # get ngrok tunnel URL and send to Discord webhook
 ngrok_url=$(grep -oP "tcp://\K[^:]*:[0-9]+" $root/status.log)
 if [ ! -z "$ngrok_url" ]; then
-  message="@everyone Minecraft Java edition server IP and port: || $ngrok_url ||"
+  message="@everyone :rocket: Minecraft Java edition server IP and port: || $ngrok_url ||"
   payload="{\"content\": \"$message\"}"
   curl -X POST -H "Content-Type: application/json" -d "$payload" $webhook_url
   if [ $? -eq 0 ]; then
