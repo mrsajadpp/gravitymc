@@ -1,4 +1,3 @@
-# gravitymc
 # Minecraft Server - Setup Guide
 > Warning: Nix support on Replit is still under heavy development. Works best if the repl is boosted.
 
