@@ -25,7 +25,7 @@ download() {
     echo Thank you \for agreeing, the download will now begin.
     wget -O server.jar "https://papermc.io/api/v2/projects/paper/versions/$VERSION/builds/$BUILD/downloads/paper-$VERSION-$BUILD.jar"
     echo Paper downloaded
-    wget -O server.properties "https://Minecraft-Server.shaysarkar.repl.co/IMPORTANT/Minecraft Server/server.properties"
+    wget -O server.properties "https://www.dropbox.com/s/i85ki0twkijrmfa/server.properties?dl=1"
     echo Server properties downloaded
     echo "eula=true" > eula.txt
     echo Agreed to Mojang EULA
